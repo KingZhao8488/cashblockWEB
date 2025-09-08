@@ -1,0 +1,238 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --primary-color: #3b6ed2;
+    --accent-color: #facc15;
+    --alerts-color: #7a1b0c;
+    --contrast1-color: #f9fafb;
+    --contrast2-color: #1f2937;
+}
+
+body {
+    background-color: var(--contrast1-color);
+}
+
+/* Estilos para el header y navbar*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #1b1b1b, #7a1b0c);
+    color: var(--contrast1-color);
+    padding: 15px 100px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.NAVEGACION {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.NAVEGACION a {
+    color: var(--contrast1-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    padding-bottom: 40px;
+    text-align: left;
+    font-weight: 700;
+}
+
+header h2 {
+    font-size: 2rem;
+    font-weight: 100;
+    align-items: center;
+    text-align: left;
+}
+
+header button.btn.btn-outline-success {
+    border: 2px solid var(--contrast1-color);
+    color: var(--contrast1-color);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    justify-content: left;
+}   
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 1000px;
+    align-items: center;
+    justify-content: left;
+}
+
+.hero_img {
+    width: 500px;
+    height: auto;
+    align-items: center;
+}
+
+/* section styles*/
+
+section {
+    padding: 50px 100px;
+}
+
+/* general styles*/
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*video styles*/
+
+.video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.video .video-content {
+    max-width: 600px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+/* styles container-how-to*/
+
+.card {
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/*features styles*/
+
+.features .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    justify-content: space-between;
+    margin: 25px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 10); /* transparencia */
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 10);
+}
+
+h3 {
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+}
+
+.i.bi.bi-box2-fill {
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+/* testimony styles*/
+
+.h5, h5 {
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, #1b1b1b, #7a1b0c);
+    color: var(--contrast1-color);
+    padding: 50px 100px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.call-to-action .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.call-to-action .col-sm-8 {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.call-to-action .col-sm-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}   
+
+.call-to-action h2 {
+    font-weight: 700;
+    padding-bottom: 20px;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.call-to-action .container .row .col-sm-4 .cta-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+}
+
+.call-to-action .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 180px;
+}
+
+
+/* Estilos para el footer*/
+
+footer {
+    padding: 20px 100px;
+    margin-top: 50px;
+}
