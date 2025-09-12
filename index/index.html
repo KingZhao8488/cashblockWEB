@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../index/styles.css">
+    <!--<link rel="icon" type="image/x-icon" href="../img/isotipo_chasblock.png">-->
     <title>Casblock -- Home</title>
 </head>
 <body>
@@ -18,200 +19,229 @@
               <span class="navbar-toggler-icon"></span> 
             </button> 
             <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11"> 
-              <a class="navbar-brand col-lg-3 me-0" href="#"><img src="../img/Mesa de trabajo 7.png" width="110" height="auto" alt=""></a> 
+              <a class="navbar-brand col-lg-3 me-0" href="#">
+                <img src="../img/logotipo_cashblock.png" width="130" height="auto" alt="logotipo CashBlock">
+              </a> 
               <ul class="navbar-nav col-lg-6 justify-content-lg-center"> 
                 <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li> 
                 <li class="nav-item"> <a class="nav-link" href="#">Características</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="#">Precios</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="#">Contacto</a> </li>
-                <!--
-                <li class="nav-item"> <a class="nav-link disabled" aria-disabled="true">Disabled</a> </li> 
-                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a> 
-                  <ul class="dropdown-menu"> 
-                    <li><a class="dropdown-item" href="#">Action</a></li> 
-                    <li><a class="dropdown-item" href="#">Another action</a></li> 
-                    <li><a class="dropdown-item" href="#">Something else here</a></li> 
-                  </ul> 
-                </li> 
-                -->
+                
               </ul> 
               <div class="d-lg-flex col-lg-3 justify-content-lg-end"> 
                 <button class="btn btn-primary">Regístrate</button>
-                <button type="button" class="btn btn-outline-light">Ingreso</button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingreso</button>
+                
               </div> 
             </div> 
           </div> 
         </nav>
         
-        <div class="hero container" >
-          <div class="row">
-            <div class="col">
-              <h1>
-                Gestiona tus invetarios de forma inteligente.
-              </h1>
-              <h2>
-                Monitorea stock, registra ventas, gestiona proveedores y genera reportes automáticos. <B>CashBlock</B> pone orden en tu negocio.
-              </h2>
-              <button type="button" class="btn btn-outline-success">Probar Gratis</button>
+        <div class="hero container d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <div class="text-center text-md-start mb-4 mb-md-0">
+                <h1 class="display-3">
+                    Gestiona tus inventarios de forma inteligente.
+                </h1>
+                <h2 class="fs-4 fw-light">
+                    Monitorea stock, registra ventas, gestiona proveedores y genera reportes automáticos. <b>CashBlock</b> pone orden en tu negocio.
+                </h2>
+                <button type="button" class="btn btn-outline-success mt-3">Probar Gratis</button>
             </div>
-            <div class="col">
-              <img class="hero_img" src="../img/ChatGPT Image 3 sept 2025, 19_12_44.png" alt="hero_img">
+            <div class="ms-md-5">
+                <video class="img-fluid rounded" autoplay muted loop loading="lazy">
+                    <source src="../video/logotipo cashblock 3.mp4" type="video/mp4" />
+                </video>
             </div>
-          </div>
         </div>
     </header>
 
-    <section class="video">
-      <div class="video-content">
-        <h2>Optimiza tu negocio con CashBlock</h2>
-        <p>Descubre cómo nuestra plataforma transforma la gestión de inventarios y ventas en pequeñas y medianas empresas.</p>
-      </div>
-      <video width="900" height="auto" autoplay muted loop loading="lazy" border-radius="20px">
-        <source src="../video/Hailuo_Video_Optimiza tu negocio La gestión_420087550764261381.mp4" type="video/mp4" />
+    <section>
+      <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="dark">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingreso</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text-center mb-4">
+                          <img src="../img/Mesa de trabajo 7.png" width="280" height="auto" alt="">
+                        </div>
+                        <form>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Direccion de Correo:</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie mas.</div>
+                          </div>
+                          <div class="row g-3 align-items-center">
+                            
+                            <div class="col-auto">
+                              <label for="inputPassword5" class="form-label">Password</label>
+                              <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                              <div id="passwordHelpBlock" class="form-text">
+                                Tu password debe ser entre 8-20 caracteres, debe contener letras y numeros y no debe contener espacios, caracteres especiales o emojis.
+                              </div>
+                            </div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+                              <label class="form-check-label" for="switchCheckDefault">Recuerda mi información</label>
+                            </div>
+                            <div>
+                              <a href="#">¿Olvidaste tu contraseña?</a>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Ingresar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-    </section>
 
-    <section class="how-to-use">
-      <div class="container-how-to text-center ">
-        <div>
-          <h2>Así de fácil es usar CashBlock</h2>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 20rem;">
-              <img src="../img/create an sleek and professional image of a businessman registering in an app.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Regístrate</h5>
-                <p class="card-text">Crea tu cuenta en minutos.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 20rem;">
-              <img src="../img/create sleek and professional image of a man loading inventory.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Carga tu inventario</h5>
-                <p class="card-text">Ingresa productos y proveedores fácilmente.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 20rem;">
-              <img src="../img/create a sleek and professional image of a man selling products.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Comienza a vender</h5>
-                <p class="card-text">Monitorea tus ventas y obtén reportes automáticos.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="features">
-      <div class="container text-center">
-        <div>
-          <h2>¿Por qué CashBlock?</h2>
+        <div class="container text-center py-5">
+            <div class="row align-items-center flex-column flex-md-row">
+                <div class="col-md-6 mb-4 mb-md-0 text-center text-md-start">
+                    <h2>Optimiza tu negocio con CashBlock</h2>
+                    <p>Descubre cómo nuestra plataforma transforma la gestión de inventarios y ventas en pequeñas y medianas empresas.</p>
+                    <div class="container text-center">
+                      <div class="row">
+                        <div class="col">
+                          <img src="../img/stock_1.gif" alt="" width="100" height="auto">
+                          <p>Gestiona tu inventario</p>
+                        </div>
+                        <div class="col">
+                          <img src="../img/stock_2.gif" alt="" width="100" height="auto">
+                          <P>Aumenta tus ventas</P>
+                        </div>
+                        <div class="col">
+                          <img src="../img/stock_3.gif" alt="" width="100" height="auto">
+                          <p>Manten al dia tu stock</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <video class="img-fluid rounded" autoplay muted loop loading="lazy">
+                        <source src="../video/Hailuo_Video_Optimiza tu negocio La gestión_420087550764261381.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
         </div>
-        <div class="row row-cols-2">
-          <div class="col">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="auto" fill="currentColor" class="bi bi-box2-fill" viewBox="0 0 16 16">
-            <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zM15 4.667V5H1v-.333L1.5 4h6V1h1v3h6z"/>
-          </svg>
-            <h3>Inventario al día</h3> 
-            <p>Controla entradas y salidas en tiempo real.</p>
-          </div>
-          <div class="col">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="auto" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708"/>
-          </svg>
-            <h3>Ventas rápidas</h3> 
-            <p>Registra transacciones sin complicaciones.</p>
-          </div>
-          <div class="col">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="auto" fill="currentColor" class="bi bi-handbag-fill" viewBox="0 0 16 16">
-            <path d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2M5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0z"/>
-          </svg>
-            <h3>Gestión de proveedores</h3> 
-            <p>Mantén todo organizado y accesible.</p>
-          </div>
-          <div class="col">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="auto" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
-            <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
-            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
-          </svg>
-            <h3>Reportes automáticos</h3> 
-            <p>Toma decisiones con datos claros y precisos.</p>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section class="testimony">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../img/create an image of a shop owner (1).jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Juan, dueño de Abarrotes El Sol</h5>
-              <p>“Con CashBlock ahora sé exactamente qué productos reponer y cuándo. Mi tienda funciona mucho mejor.”</p>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/shop_owner.jpg" class="d-block w-100" alt="imagen tienda Juan">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Juan, dueño de Abarrotes El Sol</h5>
+                        <p>“Con CashBlock ahora sé exactamente qué productos reponer y cuándo. Mi tienda funciona mucho mejor.”</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/shop2_owner.jpg" class="d-block w-100" alt="imagen tienda Marta">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Marta López, Tienda El Ahorro</h5>
+                        <p>"Antes llevaba todo en cuadernos y siempre me confundía con los inventarios. Desde que uso CashBlock sé exactamente qué tengo en stock y qué debo pedir. Ahora ahorro tiempo y dinero."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/tool_shop_owner.jpg" class="d-block w-100" alt="imagen tienda Jorge">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Jorge Ramírez, Ferretería La Llave</h5>
+                        <p>"Con CashBlock, mis ventas y proveedores están bajo control en un solo lugar. Los reportes automáticos me ayudan a tomar mejores decisiones y evitar quedarme sin productos clave."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/coffe_shop_owner.jpg" class="d-block w-100" alt="imagen tienda Ana cafeteria">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ana Torres, Café Central</h5>
+                        <p>"Lo mejor de CashBlock es la simplicidad. No soy experto en tecnología y aun así pude organizar mi inventario y ver mis ganancias de forma clara. ¡Es justo lo que necesitaba!"</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../img/create an image of a shop owner.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Marta López, Tienda El Ahorro</h5>
-              <p>"Antes llevaba todo en cuadernos y siempre me confundía con los inventarios. Desde que uso CashBlock sé exactamente qué tengo en stock y qué debo pedir. Ahora ahorro tiempo y dinero."</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../img/create an image of a tool shop owner.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Jorge Ramírez, Ferretería La Llave</h5>
-              <p>"Con CashBlock, mis ventas y proveedores están bajo control en un solo lugar. Los reportes automáticos me ayudan a tomar mejores decisiones y evitar quedarme sin productos clave."</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../img/create an image of a coffe shop owner.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Ana Torres, Café Central</h5>
-              <p>"Lo mejor de CashBlock es la simplicidad. No soy experto en tecnología y aun así pude organizar mi inventario y ver mis ganancias de forma clara. ¡Es justo lo que necesitaba!"</p>
-            </div>
-          </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
     </section>
 
+    <section class="how-to-use py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">Así de fácil es usar CashBlock</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                      <div>
+                        <img src="../img/man_registering_app.jpg" alt="" width="375" height="auto">
+                      </div>
+                        <i class="bi bi-stopwatch-fill fs-1"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Regístrate</h5>
+                            <p class="card-text">Crea tu cuenta en minutos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div>
+                          <img src="../img/man_loading_inventory.jpg" alt="" width="375" height="auto">
+                        </div>
+                        <i class="bi bi-box-fill fs-1"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Carga tu inventario</h5>
+                            <p class="card-text">Añade tus productos de forma sencilla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div>
+                          <img src="../img/man_selling_products.jpg" alt="" width="375" height="auto">
+                        </div>
+                        <i class="bi bi-currency-dollar fs-1"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Comienza a vender</h5>
+                            <p class="card-text">Monitorea tus ventas y obtén reportes automáticos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
     <section class="call-to-action">
       <div class="container text-center">
-        <div class="row">
-          <div class="col-sm-8">
-            <img src="../img/2108.w023.n001.843B.p1.843.jpg" alt="" width="900" height="auto" loading="lazy">
+        <div class="row flex-column flex-md-row-reverse align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="../img/2108.w023.n001.843B.p1.843.jpg" alt="" class="img-fluid rounded" loading="lazy">
           </div>
-          <div class="col-sm-4">
+          <div class="col-md-6 d-flex flex-column align-items-center align-items-md-start text-center text-md-start">
             <div>
-              <h2>Empieza hoy con CashBlock</h2>
+              <h2 class="fw-bold mb-4">Empieza hoy con CashBlock</h2>
             </div>
-            <div class="cta-buttons">
+            <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-start gap-3">
               <div>
-                <button type="button" class="btn btn-outline-success">Probar Gratis</button>
+                <button type="button" class="btn btn-primary">Probar Gratis</button>
               </div>
               <div>
-                <button type="button" class="btn btn-outline-info">Solicitar Demo</button>
+                <button type="button" class="btn btn-outline-light">Solicitar Demo</button>
               </div>
             </div>
           </div>
         </div>
-        
       </div>
     </section>
 
