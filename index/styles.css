@@ -134,6 +134,11 @@ header {
     color: var(--contrast1-color);
 }
 
+
+.modal-body {
+    padding: 30px;
+}
+
 /* Estilos para el hero*/
 
 
@@ -354,4 +359,109 @@ h3 {
 footer {
     padding: 20px 100px;
     margin-top: 50px;
+}
+
+/* Responsive design Modifications */
+
+/* === MEDIA QUERIES === */
+
+/* Extra grandes (≥ 2560px) */
+@media screen and (min-width: 2560px) {
+    header, section, footer {
+        padding: 2rem 20rem;
+    }
+    h1 { font-size: 5rem; }
+    h2 { font-size: 2.5rem; }
+    }
+
+    /* 1920x1080 */
+    @media screen and (max-width: 1920px) {
+    header, section, footer {
+        padding: 2rem 12rem;
+    }
+    h1 { font-size: 4rem; }
+    h2 { font-size: 2rem; }
+    }
+
+    /* 1440x900 */
+    @media screen and (max-width: 1440px) {
+    header, section, footer {
+        padding: 2rem 6rem;
+    }
+    h1 { font-size: 3.5rem; }
+    }
+
+    /* 1366x768 */
+    @media screen and (max-width: 1366px) {
+    header, section, footer {
+        padding: 2rem 4rem;
+    }
+    h1 { font-size: 3rem; }
+    }
+
+    /* 1280x960 / 1180x820 / 1024x768 (tablets landscape) */
+    @media screen and (max-width: 1280px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .hero video, .hero_img {
+        width: 100%;
+        max-width: 500px;
+        margin: 1rem auto;
+    }
+    }
+
+    /* Tablets portrait (≤ 768px) */
+    @media screen and (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+    h1 { font-size: 2rem; text-align: center; }
+    h2 { font-size: 1.2rem; text-align: center; }
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+    .navbar-brand img {
+        margin-left: 0;
+    }
+    #navbarsExample11 > div {
+        padding-right: 0;
+        gap: 10px;
+    }
+    }
+
+    /* Mobile L (≤ 430px, 412px, 375px, 360px) */
+    @media screen and (max-width: 430px) {
+    header {
+        padding: 0.5rem;
+    }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1rem; }
+    .hero {
+        flex-direction: column;
+        padding: 0.5rem;
+        text-align: center;
+    }
+    .navbar {
+        height: auto;
+    }
+    .navbar-brand img {
+        width: 100px;
+        margin-left: 0;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    section {
+        padding: 1rem;
+    }
+    footer {
+        padding: 1rem;
+        text-align: center;
+    }
 }
