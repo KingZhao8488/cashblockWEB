@@ -1,4 +1,4 @@
-# 💰 CashBlock
+# 💰 CashBlock V-1.0
 
 CashBlock es una plataforma web diseñada para ayudar a pequeñas y medianas empresas a **gestionar sus inventarios**, **monitorear ventas**, **administrar proveedores** y **generar reportes automáticos** 
 de forma sencilla y eficiente.
